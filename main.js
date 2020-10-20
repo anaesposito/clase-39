@@ -115,13 +115,11 @@ let listaDeFrutas = [];
 //   }
 //   return i;
 // };
-const reemplazarValorFruta = (frutitas) => {
-  for (let fruta of listaDeFrutas) {
-    fruta = obtenerFrutaAlAzar(frutitas);
-  }
-  return fruta;
-};
-console.log(reemplazarValorFruta());
+
+for (let index = 0; index < 5; index++) {
+  listaDeFrutas[index] = obtenerFrutaAlAzar(frutitas);
+}
+console.log(listaDeFrutas);
 // console.log(listaDeFrutas[0]);
 // console.log(listaDeFrutas[1]);
 // console.log(listaDeFrutas[2]);
